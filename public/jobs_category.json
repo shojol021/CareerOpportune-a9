@@ -1,0 +1,22 @@
+[
+  {
+    "jobType": "Software Developer",
+    "logoUrl": "https://i.postimg.cc/L5rztpgH/developer.png",
+    "vacancies": "130"
+  },
+  {
+    "jobType": "Marketing Manager",
+    "logoUrl": "https://i.postimg.cc/tJ13nTTS/marketing.png",
+    "vacancies": "250"
+  },
+  {
+    "jobType": "Sales Representative",
+    "logoUrl": "https://i.postimg.cc/v8jLFWqp/sales.png",
+    "vacancies": "500+"
+  },
+  {
+    "jobType": "Graphic Designer",
+    "logoUrl": "https://i.postimg.cc/fLq7bXwS/graphics.png",
+    "vacancies": "330"
+  }
+]
