@@ -1,91 +1,139 @@
 [
     {
-    
-      "id": "01",
-      "companyName": "Google LLC",
+        "id": "01",
+      "companyName": "Google",
       "jobType": "Software Engineer",
       "jobMode": "Remote",
       "workingHours": "Full-time",
       "location": "Mountain View, USA",
       "salaryRange": "120k-180k",
-      "logoUrl": "https://i.postimg.cc/qqww85cg/google.png"
+      "logoUrl": "https://i.postimg.cc/qqww85cg/google.png",
+      "jobDescription": "We are seeking a talented software engineer to join our team and help build innovative solutions to complex problems.",
+      "jobResponsibility": "Develop, test, and deploy high-quality software that meets the needs of our customers. Collaborate with cross-functional teams to deliver cutting-edge technology.",
+      "educationalRequirement": "Bachelor's degree in computer science, engineering, or related field from an accredited university.",
+      "experience": "3-5 years of relevant experience in software development.",
+      "phone": "+1-123-456-7890",
+      "email": "jobs@google.com",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043"
     },
     {
-    
-      "id": "02",
-      "companyName": "Amazon",
-      "jobType": "Product Manager",
-      "jobMode": "Onsite",
-      "workingHours": "Full-time",
-      "location": "Seattle, USA",
-      "salaryRange": "100k-150k",
-      "logoUrl": "https://i.postimg.cc/vBW3mBcr/amazon.png"
-    },
-    {
-    
-      "id": "03",
+        "id": "02",
       "companyName": "Microsoft",
       "jobType": "Data Analyst",
-      "jobMode": "Remote",
+      "jobMode": "Onsite",
       "workingHours": "Part-time",
       "location": "Redmond, USA",
-      "salaryRange": "60k-80k",
-      "logoUrl": "https://i.postimg.cc/nhC2DTXc/microsoft.png"
+      "salaryRange": "60k-90k",
+      "logoUrl": "https://i.postimg.cc/nhC2DTXc/microsoft.png",
+      "jobDescription": "We are seeking a detail-oriented data analyst to join our team and help us uncover insights and drive business decisions.",
+      "jobResponsibility": "Develop and maintain data models, dashboards, and reports. Analyze and interpret complex data sets to identify trends and opportunities.",
+      "educationalRequirement": "Bachelor's degree in statistics, mathematics, computer science, or related field from an accredited university.",
+      "experience": "2-3 years of relevant experience in data analysis.",
+      "phone": "+1-123-456-7890",
+      "email": "jobs@microsoft.com",
+      "address": "1 Microsoft Way, Redmond, WA 98052"
     },
     {
-    
-      "id": "04",
-      "companyName": "IBM",
-      "jobType": "Cloud Solutions Architect",
-      "jobMode": "Onsite",
-      "workingHours": "Full-time",
-      "location": "New York, USA",
-      "salaryRange": "130k-180k",
-      "logoUrl": "https://i.postimg.cc/J47P1RmX/ibm.png"
-    },
-    {
-    
-      "id": "05",
-      "companyName": "Facebook",
-      "jobType": "UX Designer",
+        "id": "03",
+      "companyName": "Amazon",
+      "jobType": "Product Manager",
       "jobMode": "Remote",
       "workingHours": "Full-time",
-      "location": "Menlo Park, USA",
-      "salaryRange": "100k-140k",
-      "logoUrl": "https://i.postimg.cc/YqX80Tqs/facebook.png"
+      "location": "Seattle, USA",
+      "salaryRange": "150k-200k",
+      "logoUrl": "https://i.postimg.cc/vBW3mBcr/amazon.png",
+      "jobDescription": "We are seeking an experienced product manager to join our team and help drive the vision and roadmap for our product offerings.",
+      "jobResponsibility": "Define product requirements and prioritize product features. Work with cross-functional teams to deliver high-quality products on time and on budget.",
+      "educationalRequirement": "Bachelor's degree in business, engineering, or related field from an accredited university. MBA preferred.",
+      "experience": "5-7 years of relevant experience in product management.",
+      "phone": "+1-123-456-7890",
+      "email": "jobs@amazon.com",
+      "address": "410 Terry Ave N, Seattle, WA 98109"
     },
     {
-    
-      "id": "06",
-      "companyName": "Tesla",
-      "jobType": "Electrical Engineer",
-      "jobMode": "Onsite",
-      "workingHours": "Full-time",
-      "location": "Fremont, USA",
-      "salaryRange": "110k-150k",
-      "logoUrl": "https://i.postimg.cc/bwWTHbn0/tesla.png"
+        "id": "04",
+        "companyName": "Tesla",
+        "jobType": "Electrical Engineer",
+        "jobMode": "Onsite",
+        "workingHours": "Full-time",
+        "location": "Fremont, USA",
+        "salaryRange": "90k-120k",
+        "logoUrl": "https://i.postimg.cc/bwWTHbn0/tesla.png",
+        "jobDescription": "We are seeking a highly motivated electrical engineer to join our team.",
+        "jobResponsibility": "Design and develop electrical systems and components for electric vehicles.",
+        "educationalRequirement": "Bachelor's degree in Electrical Engineering.",
+        "experience": "3+ years of experience in designing electrical systems.",
+        "phone": "123-456-7890",
+        "email": "jobs@tesla.com",
+        "address": "3500 Deer Creek Rd, Palo Alto, CA 94304"
+      },
+      {
+        "id": "05",
+        "companyName": "IBM",
+        "jobType": "Data Analyst",
+        "jobMode": "Remote",
+        "workingHours": "Part-time",
+        "location": "New York, USA",
+        "salaryRange": "50k-70k",
+        "logoUrl": "https://i.postimg.cc/J47P1RmX/ibm.png",
+        "jobDescription": "We are looking for a skilled data analyst to join our team.",
+        "jobResponsibility": "Analyze large datasets and generate insights to inform business decisions.",
+        "educationalRequirement": "Bachelor's degree in Computer Science, Statistics or related field.",
+        "experience": "2+ years of experience in data analysis.",
+        "phone": "123-456-7890",
+        "email": "jobs@ibm.com",
+        "address": "1 New Orchard Road, Armonk, New York 10504-1722"
+      },
+      {
+        "id": "06",
+        "companyName": "Facebook",
+        "jobType": "Product Manager",
+        "jobMode": "Onsite",
+        "workingHours": "Full-time",
+        "location": "Menlo Park, USA",
+        "salaryRange": "150k-250k",
+        "logoUrl": "https://i.postimg.cc/YqX80Tqs/facebook.png",
+        "jobDescription": "We are seeking a skilled product manager to help us deliver cutting-edge products that will take Facebook to the next level. You'll work closely with our engineering and design teams to create amazing user experiences that millions of people will love.",
+        "jobResponsibility": "Develop and execute product strategies that align with Facebook's overall vision and goals. Work cross-functionally with engineering, design, research, and data teams to deliver high-quality products on time and within budget. Monitor product performance and iterate based on feedback from users and stakeholders.",
+        "educationalRequirement": "Bachelor's or Master's degree in Computer Science, Engineering, Business, or a related field.",
+        "experience": "5+ years of experience as a product manager, with a proven track record of delivering successful products that meet business and user needs.",
+        "phone": "+1-555-555-5555",
+        "email": "jobs@facebook.com",
+        "fullAddress": "1 Hacker Way, Menlo Park, CA 94025, USA"
     },
     {
-    
-      "id": "07",
-      "companyName": "Oracle",
-      "jobType": "Database Administrator",
-      "jobMode": "Remote",
-      "workingHours": "Hourly",
-      "location": "Austin, USA",
-      "salaryRange": "50-70",
-      "logoUrl": "https://i.postimg.cc/QM7q6tg2/oracle.png"
-    },
-    {
-    
-      "id": "08",
-      "companyName": "Intel",
-      "jobType": "Hardware Engineer",
-      "jobMode": "Onsite",
-      "workingHours": "Full-time",
-      "location": "Santa Clara, USA",
-      "salaryRange": "120k-170k",
-      "logoUrl": "https://i.postimg.cc/44QWkYCZ/intel.png"
-    }
+        "id": "07",
+        "companyName": "Intel",
+        "jobType": "Software Engineer",
+        "jobMode": "Onsite",
+        "workingHours": "Full-time",
+        "location": "Santa Clara, USA",
+        "salaryRange": "100k-150k",
+        "logoUrl": "https://i.postimg.cc/44QWkYCZ/intel.png",
+        "jobDescription": "Design and develop software and hardware products using Intel architecture",
+        "jobResponsibility": "Design, develop, and test software and hardware products, collaborate with other engineers, and contribute to team success",
+        "educationalRequirement": "Bachelor's or Master's degree in Computer Science or a related field",
+        "experience": "2-3 years of experience in software or hardware development",
+        "phone": "+1-xxx-xxx-xxxx",
+        "email": "careers@intel.com",
+        "fullAddress": "2200 Mission College Blvd, Santa Clara, CA 95054, USA"
+      },
+      {
+        "id": "08",
+        "companyName": "Oracle",
+        "jobType": "Database Administrator",
+        "jobMode": "Remote",
+        "workingHours": "Full-time",
+        "location": "Redwood City, USA",
+        "salaryRange": "90k-140k",
+        "logoUrl": "https://i.postimg.cc/QM7q6tg2/oracle.png",
+        "jobDescription": "Install, configure, and maintain databases for Oracle software products",
+        "jobResponsibility": "Install and configure databases, maintain and optimize database performance, troubleshoot and resolve issues, and provide support to users",
+        "educationalRequirement": "Bachelor's or Master's degree in Computer Science or a related field",
+        "experience": "3-5 years of experience in database administration",
+        "phone": "+1-xxx-xxx-xxxx",
+        "email": "careers@oracle.com",
+        "fullAddress": "500 Oracle Pkwy, Redwood City, CA 94065, USA"
+      }
   ]
   
