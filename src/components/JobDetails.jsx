@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { BriefcaseIcon, CurrencyDollarIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid';
 
 const JobDetails = () => {
     const params = useParams()
@@ -24,15 +25,31 @@ const JobDetails = () => {
                         <h3 className='mb-3 lg:mr-5'><span className='font-bold'>Job Description:</span> {jobDescription}</h3>
                         <h3 className='mb-3 lg:mr-5'><span className='font-bold'>Job Responsibility:</span> {jobResponsibility}</h3>
                         <h3 className='mb-3 lg:mr-5'><span className='font-bold'>Educational Requirements:</span> {educationalRequirement}</h3>
+                        <h3 className='mb-3 lg:mr-5'><span className='font-bold'>Experience:</span> {experience}</h3>
                     </div>
                     <div className='bg-gradient-to-br from-sky-200  to-purple-200 rounded-lg border border-solid border-sky-400 p-5'>
                         <h2 className='font-bold border-b border-gray-400 mb-4'>Job Details</h2>
-                        <p className='text-gray-600'>Salary: ${salaryRange}</p>
-                        <p className='text-gray-600'>Job Title: {jobType}</p>
+                        <div className='flex'>
+                            <CurrencyDollarIcon className="h-6 w-6 text-blue-500 me-3" />
+                            <p className='text-gray-600 mb-2'><span className='font-bold'>Salary:</span> ${salaryRange}</p>
+                        </div>
+                        <div className='flex'>
+                            <BriefcaseIcon className="h-6 w-6 text-blue-500 me-3" />
+                            <p className='text-gray-600 mb-2'><span className='font-bold'>Job Style:</span> {jobType}</p>
+                        </div>
                         <h2 className='font-bold border-b border-gray-400 my-4'>Contact Information</h2>
-                        <p className='text-gray-600'>Phone: {phone}</p>
-                        <p className='text-gray-600'>Email: {email}</p>
-                        <p className='text-gray-600'>Address: {address}</p>
+                        <div className='flex'>
+                            <PhoneIcon className="h-6 w-6 text-blue-500 me-3" />
+                            <p className='text-gray-600 mb-2'><span className='font-bold'>Phone:</span> {phone}</p>
+                        </div>
+                        <div className='flex'>
+                            <EnvelopeIcon className="h-6 w-6 text-blue-500 me-3" />
+                            <p className='text-gray-600 mb-2'><span className='font-bold'>Email:</span> {email}</p>
+                        </div>
+                        <div className='flex'>
+                            <MapPinIcon className="h-6 w-6 text-blue-500 me-3" />
+                            <p className='text-gray-600 mb-2'><span className='font-bold'>Address:</span> {address}</p>
+                        </div>
                     </div>
                 </div>
             </div>
