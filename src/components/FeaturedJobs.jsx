@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const FeaturedJobs = ({ job }) => {
-    const { logoUrl, jobType, companyName, jobMode, workingHours, location, salaryRange } = job;
+    
+    const { logoUrl, jobType, companyName, jobMode, workingHours, location, salaryRange, id } = job;
+    const navigate = useNavigate();
+    const handleViewDetails = () => {
+        navigate(`job-details/${id}`)
+    }
+
     return (
         <div className='m-3 border-solid border border-sky-300 rounded-lg bg-gradient-to-br from-sky-200  to-purple-200 p-3'>
             <img className='w-24 mb-3 rounded-md' src={logoUrl} alt="" />
@@ -13,7 +20,7 @@ const FeaturedJobs = ({ job }) => {
                 <p className='me-5 text-gray-500'>{location}</p>
                 <p className='text-gray-500'>Salary: ${salaryRange}</p>
             </div>
-            <button className='btn btn-secondary'>View Details</button>
+            <button onClick={handleViewDetails} className='btn btn-secondary'>View Details</button>
         </div>
     );
 };

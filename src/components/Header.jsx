@@ -1,9 +1,16 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
+
+    const location = useLocation();
+    
+    const currentLocation = location.pathname;
+    const checkPath = currentLocation.slice(0, 12) == '/job-details';
+    console.log(checkPath)
+    const headerStyle = checkPath? "bg-[url('/banner1.png')]" : "";
     return (
-        <nav className='text-center flex justify-between'>
+        <nav className={`text-center flex justify-between md:p-9 ${headerStyle}`}>
             <Link to='/'><h1 className='text-2xl font-bold'>CareerOpportune</h1></Link>
             <ul className='flex justify-center'>
                 <li className='me-5'><NavLink  to='/' className={({ isActive }) => (isActive ? 'active' : 'default')}>Home</NavLink></li>

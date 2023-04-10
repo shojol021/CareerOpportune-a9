@@ -17,7 +17,7 @@ const Featured = () => {
 
     return (
 
-        <div className=''>
+        <div className='m-9'>
             <h2 className='text-3xl font-bold  text-gray-800 text-center'>Featured Jobs</h2>
             <p className='font-light text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className='grid lg:grid-cols-2 m-9'>
