@@ -10,7 +10,7 @@ const FeaturedJobs = ({ job }) => {
     }
 
     return (
-        <div className='m-3 border-solid border border-sky-300 rounded-lg bg-gradient-to-br from-sky-200  to-purple-200 p-3'>
+        <div className='m-3 border-solid border border-sky-300 hover:border-purple-400 rounded-lg bg-gradient-to-br from-sky-200  to-purple-200 p-3'>
             <img className='w-24 mb-3 rounded-md' src={logoUrl} alt="" />
             <h3 className='text-2xl font-bold'>{jobType}</h3>
             <p className='text-gray-500 mb-1'>{companyName}</p>
