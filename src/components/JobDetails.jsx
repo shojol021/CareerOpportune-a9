@@ -4,6 +4,7 @@ import { BriefcaseIcon, CurrencyDollarIcon, PhoneIcon, EnvelopeIcon, MapPinIcon 
 import { addToLocalStorage } from '../utilities';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Footer';
 
 const JobDetails = () => {
     const nevigate = useNavigate();
@@ -24,7 +25,8 @@ const JobDetails = () => {
 
         const { jobDescription, jobResponsibility, experience, educationalRequirement, address, phone, salaryRange, jobType, email } = findJob;
         return (
-            <div className='m-9'>
+            <div className=''>
+                <div className='m-9'>
                 <h2 className='text-center font-bold text-3xl m-5'>Job Details</h2>
                 <div className='grid grid-cols-3'>
                     <div className='col-span-2'>
@@ -61,7 +63,7 @@ const JobDetails = () => {
                             </div>
                         </div>
                         <div className='text-center mt-5'>
-                            <button onClick={() => addToLocalStorage(findJob)} className='btn btn-primary'>Apply Now</button>
+                            <button onClick={() => addToLocalStorage(findJob)} className='btn btn-primary w-full'>Apply Now</button>
                         </div>
                     </div>
                 </div>
@@ -69,7 +71,9 @@ const JobDetails = () => {
                 <div className='text-center md:m-9'>
                     <button onClick={handleBackBtn} className='btn btn-secondary w-36'>Back</button>
                 </div>
+                </div>
                 <ToastContainer />
+                <Footer></Footer>
             </div>
         );
     }
