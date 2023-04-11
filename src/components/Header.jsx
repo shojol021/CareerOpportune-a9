@@ -7,7 +7,6 @@ const Header = () => {
     
     const currentLocation = location.pathname;
     const checkPath = currentLocation.slice(0, 12) == '/job-details';
-    console.log(checkPath)
     const headerStyle = checkPath? "bg-[url('/banner1.png')]" : "";
     return (
         <nav className={`text-center flex justify-between md:p-9 ${headerStyle}`}>

@@ -1,11 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { BriefcaseIcon, CurrencyDollarIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid';
+import { addToLocalStorage } from '../utilities';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
     const nevigate = useNavigate();
     const handleBackBtn = () => {
         nevigate(-1);
+    }
+
+    let isAdded = false; 
+    const showToast = checked => {
+        if(checked){
+            toast("Already Applied!");
+        }
+        else{
+            toast("Congratulation! You have applied for the job successfully");
+        }
+        isAdded = true;
     }
     const params = useParams()
     const [jobDetails, setJobDetails] = useState([])
@@ -16,7 +30,6 @@ const JobDetails = () => {
     }, [])
 
     const findJob = jobDetails.find(job => job.id == params.id);
-    console.log(findJob);
     if (findJob) {
 
         const { jobDescription, jobResponsibility, experience, educationalRequirement, address, phone, salaryRange, jobType, email } = findJob;
@@ -32,34 +45,41 @@ const JobDetails = () => {
                         <h3 className='mb-3 lg:mr-5 font-bold'>Experience:</h3>
                         <h3 className='mb-3 lg:mr-5'> {experience}</h3>
                     </div>
-                    <div className='bg-gradient-to-br from-sky-200  to-purple-200 rounded-lg border border-solid border-sky-400 p-5'>
-                        <h2 className='font-bold border-b border-gray-400 mb-4'>Job Details</h2>
-                        <div className='flex'>
-                            <CurrencyDollarIcon className="h-6 w-6 text-violet-400 me-3" />
-                            <p className='text-gray-600 mb-2'><span className='font-bold'>Salary:</span> ${salaryRange}</p>
+                    <div>
+                        <div className='bg-gradient-to-br from-sky-200  to-purple-200 rounded-lg border border-solid border-sky-400 p-5'>
+                            <h2 className='font-bold border-b border-gray-400 mb-4'>Job Details</h2>
+                            <div className='flex'>
+                                <CurrencyDollarIcon className="h-6 w-6 text-violet-400 me-3" />
+                                <p className='text-gray-600 mb-2'><span className='font-bold'>Salary:</span> ${salaryRange}</p>
+                            </div>
+                            <div className='flex'>
+                                <BriefcaseIcon className="h-6 w-6 text-violet-400 me-3" />
+                                <p className='text-gray-600 mb-2'><span className='font-bold'>Job Style:</span> {jobType}</p>
+                            </div>
+                            <h2 className='font-bold border-b border-gray-400 my-4'>Contact Information</h2>
+                            <div className='flex'>
+                                <PhoneIcon className="h-6 w-6 text-violet-400 me-3" />
+                                <p className='text-gray-600 mb-2'><span className='font-bold'>Phone:</span> {phone}</p>
+                            </div>
+                            <div className='flex'>
+                                <EnvelopeIcon className="h-6 w-6 text-violet-400 me-3" />
+                                <p className='text-gray-600 mb-2'><span className='font-bold'>Email:</span> {email}</p>
+                            </div>
+                            <div className='flex'>
+                                <MapPinIcon className="h-6 w-6 text-violet-400 me-3" />
+                                <p className='text-gray-600 mb-2'><span className='font-bold'>Address:</span> {address}</p>
+                            </div>
                         </div>
-                        <div className='flex'>
-                            <BriefcaseIcon className="h-6 w-6 text-violet-400 me-3" />
-                            <p className='text-gray-600 mb-2'><span className='font-bold'>Job Style:</span> {jobType}</p>
-                        </div>
-                        <h2 className='font-bold border-b border-gray-400 my-4'>Contact Information</h2>
-                        <div className='flex'>
-                            <PhoneIcon className="h-6 w-6 text-violet-400 me-3" />
-                            <p className='text-gray-600 mb-2'><span className='font-bold'>Phone:</span> {phone}</p>
-                        </div>
-                        <div className='flex'>
-                            <EnvelopeIcon className="h-6 w-6 text-violet-400 me-3" />
-                            <p className='text-gray-600 mb-2'><span className='font-bold'>Email:</span> {email}</p>
-                        </div>
-                        <div className='flex'>
-                            <MapPinIcon className="h-6 w-6 text-violet-400 me-3" />
-                            <p className='text-gray-600 mb-2'><span className='font-bold'>Address:</span> {address}</p>
+                        <div className='text-center mt-5'>
+                            <button onClick={() => {addToLocalStorage(findJob), showToast(isAdded)}} className='btn btn-primary'>Apply Now</button>
                         </div>
                     </div>
                 </div>
+
                 <div className='text-center md:m-9'>
                     <button onClick={handleBackBtn} className='btn btn-secondary w-36'>Back</button>
                 </div>
+                <ToastContainer />
             </div>
         );
     }
