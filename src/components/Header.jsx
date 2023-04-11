@@ -6,8 +6,11 @@ const Header = () => {
     const location = useLocation();
     
     const currentLocation = location.pathname;
-    const checkPath = currentLocation.slice(0, 12) == '/job-details';
-    const headerStyle = checkPath? "bg-[url('/banner1.png')]" : "";
+    const isJobDetails = currentLocation.slice(0, 12) == '/job-details';
+    const isJobs = currentLocation == '/jobs';
+    const isStatistics = currentLocation == '/statistics';
+    const isBlogs = currentLocation == '/blogs';
+    const headerStyle = isJobDetails || isJobs || isStatistics || isBlogs? "bg-[url('/banner1.png')]" : "";
     return (
         <nav className={`text-center flex justify-between md:p-9 ${headerStyle}`}>
             <Link to='/'><h1 className='text-2xl font-bold'>CareerOpportune</h1></Link>

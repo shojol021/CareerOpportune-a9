@@ -13,6 +13,7 @@ import Blogs from './components/Blogs';
 import Statistics from './components/Statistics';
 import Main from './components/Main';
 import JobDetails from './components/JobDetails';
+import { getJobsFromLocalStorage } from './utilities';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {path: '/', element: <Home></Home>},
       {path: '/statistics', element: <Statistics></Statistics>},
-      {path: 'jobs', element: <AppliedJobs></AppliedJobs>},
+      {path: 'jobs', element: <AppliedJobs></AppliedJobs>, loader: getJobsFromLocalStorage},
       {path: 'blogs', element: <Blogs></Blogs>},
       {path: 'job-details/:id', element: <JobDetails></JobDetails>}
     ]

@@ -11,16 +11,6 @@ const JobDetails = () => {
         nevigate(-1);
     }
 
-    let isAdded = false; 
-    const showToast = checked => {
-        if(checked){
-            toast("Already Applied!");
-        }
-        else{
-            toast("Congratulation! You have applied for the job successfully");
-        }
-        isAdded = true;
-    }
     const params = useParams()
     const [jobDetails, setJobDetails] = useState([])
     useEffect(() => {
@@ -71,7 +61,7 @@ const JobDetails = () => {
                             </div>
                         </div>
                         <div className='text-center mt-5'>
-                            <button onClick={() => {addToLocalStorage(findJob), showToast(isAdded)}} className='btn btn-primary'>Apply Now</button>
+                            <button onClick={() => addToLocalStorage(findJob)} className='btn btn-primary'>Apply Now</button>
                         </div>
                     </div>
                 </div>
