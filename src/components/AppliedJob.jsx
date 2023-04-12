@@ -6,7 +6,7 @@ const AppliedJob = ({ appliedJob }) => {
     const { logoUrl, jobType, companyName, jobMode, workingHours, location, salaryRange, id } = appliedJob;
     const navigate = useNavigate();
     const handleViewDetails = () => {
-        navigate(`../job-details/${id}`)
+        navigate(`../job/${id}`)
     }
     return (
         <div className='m-3 border-solid border border-sky-300 hover:border-purple-400 rounded-lg bg-gradient-to-br from-sky-200  to-purple-200 p-3'>

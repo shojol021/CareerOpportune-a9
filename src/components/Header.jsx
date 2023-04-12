@@ -13,7 +13,7 @@ const Header = () => {
       };
 
     const currentLocation = location.pathname;
-    const isJobDetails = currentLocation.slice(0, 12) == '/job-details';
+    const isJobDetails = currentLocation.slice(0, 4) == '/job';
     const isJobs = currentLocation == '/jobs';
     const isStatistics = currentLocation == '/statistics';
     const isBlogs = currentLocation == '/blogs';
