@@ -10,10 +10,13 @@ const AppliedJobs = () => {
     return (
         <div>
             <div className='m-9'>
-                <h2 className='text-center font-bold text-3xl m-5'>Applied Jobs: {appliedJobs.length}</h2>
+                <h2 className='text-center font-bold text-3xl m-5'>Applied Jobs: {appliedJobs? appliedJobs.length : "0"}</h2>
+                {
+                    !appliedJobs && <div className='h-44'></div> 
+                }
                 <div>
                     {
-                        appliedJobs.map(appliedJob => <AppliedJob
+                        appliedJobs && appliedJobs.map(appliedJob => <AppliedJob
                             key={appliedJob.id}
                             appliedJob={appliedJob}
                         ></AppliedJob>)
