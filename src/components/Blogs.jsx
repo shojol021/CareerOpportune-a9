@@ -4,7 +4,7 @@ import Footer from './Footer';
 const Blogs = () => {
     return (
         <div>
-            <div className='m-9'>
+            <div className='m-5 md:m-9'>
                 <h2 className='text-center font-bold text-3xl m-5'>Blogs</h2>
                 <div className='m-3 border-solid border border-sky-300 hover:border-purple-400 rounded-lg bg-gradient-to-br from-sky-200  to-purple-200 p-3'>
                     <h2 className='font-bold text-2xl'>When should you use Context API?</h2>

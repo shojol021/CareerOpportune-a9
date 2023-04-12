@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='bg-gray-800 text-white'>
-            <div className='grid grid-cols-6 border-b m-6 py-6'>
+            <div className='grid grid-cols-2 md:grid-cols-6 gap-5 border-b m-6 py-6'>
                 <div className='col-span-2'>
                     <h2 className='font-bold text-2xl'>CareerOppurtune</h2>
                     <p className='text-gray-400 pe-6'>Explore exciting job opportunities and take the next step in your career with CareerOppurtune. Stay connected with us for the latest updates and news in the job market. Contact us for any queries or feedback, we would love to hear from you!</p>

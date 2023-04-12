@@ -28,8 +28,8 @@ const JobDetails = () => {
             <div className=''>
                 <div className='m-9'>
                 <h2 className='text-center font-bold text-3xl m-5'>Job Details</h2>
-                <div className='grid grid-cols-3'>
-                    <div className='col-span-2'>
+                <div className='grid md:grid-cols-3 my-5'>
+                    <div className='md:col-span-2'>
                         <h3 className='mb-3 lg:mr-5'><span className='font-bold'>Job Description:</span> {jobDescription}</h3>
                         <h3 className='mb-3 lg:mr-5'><span className='font-bold'>Job Responsibility:</span> {jobResponsibility}</h3>
                         <h3 className='mb-3 lg:mr-5 font-bold'>Educational Requirements: </h3>
