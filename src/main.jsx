@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {path: '/statistics', element: <Statistics></Statistics>},
       {path: 'jobs', element: <AppliedJobs></AppliedJobs>, loader: getJobsFromLocalStorage},
       {path: 'blogs', element: <Blogs></Blogs>},
-      {path: 'job-details/:id', element: <JobDetails></JobDetails>}
+      {path: 'job/:id', element: <JobDetails></JobDetails>}
     ]
   },
 ]);

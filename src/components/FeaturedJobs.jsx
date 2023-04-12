@@ -7,7 +7,7 @@ const FeaturedJobs = ({ job }) => {
     const { logoUrl, jobType, companyName, jobMode, workingHours, location, salaryRange, id } = job;
     const navigate = useNavigate();
     const handleViewDetails = () => {
-        navigate(`job-details/${id}`)
+        navigate(`job/${id}`)
     }
 
     return (
