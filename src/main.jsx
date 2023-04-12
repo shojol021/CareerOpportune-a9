@@ -14,11 +14,13 @@ import Statistics from './components/Statistics';
 import Main from './components/Main';
 import JobDetails from './components/JobDetails';
 import { getJobsFromLocalStorage } from './utilities';
+import ErrorPage from './ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {path: '/', element: <Home></Home>},
       {path: '/statistics', element: <Statistics></Statistics>},
