@@ -5,9 +5,6 @@ const ErrorPage = () => {
     const errorMsg = useRouteError()
     const loc = useLocation();
     const errorMsg2 = loc.state?.error || 'An error occurred.'
-    console.log(loc);
-
-    console.log(errorMsg);
     return (
         <div>
             <div className="flex flex-col items-center justify-center h-screen bg-gray-100">

@@ -8,7 +8,7 @@ const addToLocalStorage = (job) => {
     if (storedJobs) {
         const isExist = storedJobs.find(findJob => findJob.id === job.id)
         if (!isExist) {
-            toast("Congratulation! You have applied for the job successfully");
+            toast("Congratulation! You have applied for the job successfully!");
             appliedJobs.push(...storedJobs, job)
             localStorage.setItem('applied-jobs', JSON.stringify(appliedJobs))
         }
@@ -17,7 +17,7 @@ const addToLocalStorage = (job) => {
         }
     }
     else {
-        toast("Congratulation! You have applied for the job successfully");
+        toast("Congratulation! You have applied for the job successfully!");
         appliedJobs.push(job)
         localStorage.setItem('applied-jobs', JSON.stringify(appliedJobs))
     }

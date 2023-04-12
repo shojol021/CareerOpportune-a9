@@ -36,7 +36,7 @@ const Header = () => {
                     <li className='me-5'><NavLink to='blogs' className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink></li>
                     </ul>
                 </div>
-                <Link to='/'><h1 className='text-2xl font-bold'>CareerOpportune</h1></Link>
+                <Link to='/'><h1 className='md:text-2xl font-bold'>CareerOpportune</h1></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -47,7 +47,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Get started</a>
+                <a className="btn btn-primary">Start Applying</a>
             </div>
         </nav>
     );

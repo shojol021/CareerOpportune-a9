@@ -6,7 +6,6 @@ import Footer from './Footer';
 
 const AppliedJobs = () => {
     const appliedJobs = useLoaderData();
-    console.log(appliedJobs)
     return (
         <div>
             <div className='m-9'>

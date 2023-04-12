@@ -44,8 +44,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className='flex justify-between mx-6 pb-9 text-gray-500'>
-                <h3><small>@2023 CareerHub. All Rights Reserved</small></h3>
-                <h3><small>Powered by CareerHub</small></h3>
+                <h3><small>@2023 CareerOppurtune. All Rights Reserved</small></h3>
+                <h3><small>Powered by CareerOppurtune</small></h3>
             </div>
         </div>
     );
