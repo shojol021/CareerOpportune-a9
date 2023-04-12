@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Header from './components/Header';
 import Home from './components/Home';
 import AppliedJobs from './components/AppliedJobs';
 import Blogs from './components/Blogs';
@@ -14,7 +13,7 @@ import Statistics from './components/Statistics';
 import Main from './components/Main';
 import JobDetails from './components/JobDetails';
 import { getJobsFromLocalStorage } from './utilities';
-import ErrorPage from './ErrorPage';
+import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {

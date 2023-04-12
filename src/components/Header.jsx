@@ -5,24 +5,21 @@ const Header = () => {
 
     const location = useLocation();
 
+    const handleScrollToFeatured = () => {
+        location.pathname == '/' && window.scrollTo({
+          top: document.getElementById("featured").offsetTop,
+          behavior: "smooth"
+        });
+      };
+
     const currentLocation = location.pathname;
     const isJobDetails = currentLocation.slice(0, 12) == '/job-details';
     const isJobs = currentLocation == '/jobs';
     const isStatistics = currentLocation == '/statistics';
     const isBlogs = currentLocation == '/blogs';
     const headerStyle = isJobDetails || isJobs || isStatistics || isBlogs ? "bg-[url('/banner1.png')]" : "";
+    
     return (
-        // <nav className={`text-center flex justify-between md:p-9 ${headerStyle}`}>
-        //     <Link to='/'><h1 className='text-2xl font-bold'>CareerOpportune</h1></Link>
-        //     <ul className='flex justify-center'>
-        //         <li className='me-5'><NavLink  to='/' className={({ isActive }) => (isActive ? 'active' : 'default')}>Home</NavLink></li>
-        //         <li className='me-5'><NavLink to='/statistics' className={({ isActive }) => (isActive ? 'active' : 'default')}>Statistics</NavLink></li>
-        //         <li className='me-5'><NavLink to='jobs' className={({ isActive }) => (isActive ? 'active' : 'default')}>Applied Jobs</NavLink></li>
-        //         <li className='me-5'><NavLink to='blogs' className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink></li>
-        //     </ul>
-        //     <button className='btn btn-primary'>Start Applying</button>
-        // </nav>
-
         <nav className={`navbar bg-base-100 text-center flex justify-between md:p-9 ${headerStyle}`}>
             <div className="navbar-start">
                 <div className="dropdown">
@@ -47,7 +44,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-primary">Start Applying</a>
+                <a onClick={handleScrollToFeatured} className="btn btn-primary">Start Applying</a>
             </div>
         </nav>
     );

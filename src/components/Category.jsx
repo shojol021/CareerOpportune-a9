@@ -12,7 +12,7 @@ const Category = () => {
         <div className='m-5 md:m-9 md:pt-9'>
             <div className='text-center'>
                 <h2 className='text-3xl font-bold text-gray-800'>Job Category List</h2>
-                <p className='font-light'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <p className='text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className=' grid sm:grid-cols-2 md:grid-cols-4 md:w-2/3 mx-auto my-5 md:my-9 md:pb-9'>
                     {
                         data.map((job, index) => <CategoryJobs 

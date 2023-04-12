@@ -1,5 +1,4 @@
 import React from 'react';
-import { getJobsFromLocalStorage } from '../utilities';
 import { useLoaderData } from 'react-router-dom';
 import AppliedJob from './AppliedJob';
 import Footer from './Footer';
